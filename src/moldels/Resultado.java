@@ -16,7 +16,17 @@ public class Resultado {
         this.escenario = escenario;
         this.sample = sample;
         this.tiempoNano = tiempoNano;
-        this.tiempoMillis = tiempoMillis;
+        this.tiempoMillis = tiempoNano/1_000_000.0;
     }
+
+    @Override
+    public String toString() {
+        return "Resultado [algoritmo=" + algoritmo + ", escenario=" + escenario + ", sample=" + sample + ", tiempoNano="
+                + tiempoNano + ", tiempoMillis=" + tiempoMillis + "]";
+    }
+
+    
+
+    
 
 }
