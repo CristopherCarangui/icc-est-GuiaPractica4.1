@@ -21,8 +21,8 @@ public class Resultado {
 
     @Override
     public String toString() {
-        return "Resultado [algoritmo=" + algoritmo + ", escenario=" + escenario + ", sample=" + sample + ", tiempoNano="
-                + tiempoNano + ", tiempoMillis=" + tiempoMillis + "]";
+        String resultado = escenario +"|"+  algoritmo +"|"+  sample +"|"+   String.format("%.2f", tiempoMillis) + " ms";
+        return resultado;
     }
 
     

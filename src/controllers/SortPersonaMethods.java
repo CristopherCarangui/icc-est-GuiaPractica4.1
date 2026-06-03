@@ -1,6 +1,6 @@
 package controllers;
 import moldels.Persona;
-public class SortPeronaMethods {
+public class SortPersonaMethods {
     public void insertionSort(Persona[] personas){
         for(int i =1; i<personas.length;i++){
             Persona valorAcutal= personas[i];
@@ -9,7 +9,7 @@ public class SortPeronaMethods {
                 personas[j+1]= personas[j];
                 j--;
             }
-            personas[j+1]= personas[j];
+            personas[j+1]= valorAcutal;
         }
 
     }
